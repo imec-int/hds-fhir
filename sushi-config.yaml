@@ -10,9 +10,9 @@
 id: my-ig
 canonical: http://example.com/fhir/example
 url: http://example.com/fhir/example/ImplementationGuide/my-ig
-name: Health Data Space - Flanders
-title: "Health Data Space - Flanders"
-description: Demonstration Sample for Health Data Space - Flanders
+name: Sample - HDS
+title: "Sample Implementation Guide for HDS"
+description: Example
 status: active
 license: CC0-1.0
 date: 2020-02-26
@@ -176,7 +176,7 @@ parameters:
 # The FSHOnly flag indicates if only FSH resources should be exported.
 # If set to true, no IG related content will be generated.
 # The default value for this property is false.
-FSHOnly: true
+FSHOnly: false
 
 # When set to true, the "short" and "definition" field on the root element of an Extension will
 # be set to the "Title" and "Description" of that Extension. Default is true.
