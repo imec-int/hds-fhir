@@ -1,4 +1,4 @@
-Empty IG
+HDS IG
 ---
 This is an empty IG
 <br> </br>
