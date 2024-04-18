@@ -7,7 +7,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: Health_Data_Space_Flanders_ig
+id: hds-ig
 canonical: http://example.com/fhir/example
 url: http://example.com/fhir/example/ImplementationGuide/my-ig
 name: Health Data Space - Flanders
