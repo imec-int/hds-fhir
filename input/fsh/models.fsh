@@ -1,6 +1,6 @@
-Logical: ExampleModel
-Title: "ExampleModel"
-Description: "Example Model"
+Logical: HDSSampleModel
+Title: "HDSSampleModel"
+Description: "HDS Sample Model"
 Characteristics: #can-be-target
 
 * dateTimeReceived 1..1 TS "Timestamp received"
