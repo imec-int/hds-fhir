@@ -7,12 +7,12 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
+id: Health Data Space - Flanders -ig
 canonical: http://example.com/fhir/example
 url: http://example.com/fhir/example/ImplementationGuide/my-ig
-name: Example - VL HDS
-title: "VL HDS"
-description: Example
+name: Health Data Space - Flanders
+title: "Health Data Space - Flanders"
+description: Demonstration Sample for Health Data Space - Flanders
 status: active
 license: CC0-1.0
 date: 2020-02-26
@@ -37,8 +37,8 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
-  url: http://example.com/committees
+  name: IMEC - AI & Data
+  url: https://www.imec-int.com
   email: my-group@example.com
 
 # ContactDetail is required by the template.
