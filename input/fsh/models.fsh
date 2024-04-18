@@ -1,5 +1,5 @@
-Logical: HDSSampleModel
-Title: "HDSSampleModel"
+Logical: HDS-Sample-Model
+Title: "HDS-Sample-Model"
 Description: "HDS Sample Model"
 Characteristics: #can-be-target
 
