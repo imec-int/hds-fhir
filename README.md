@@ -12,7 +12,7 @@ Continuous Build: __[imec-int.github.io/hds-fhir/](https://imec-int.github.io/hd
 ### Issues
 Issues and change requests are managed here:  
 
-Issues:  __[https://github.com/<handle>/<repo>/issues](https://github.com/imec-int/hds-fhir/issues)__  
+Issues:  __[https://github.com/imec-int/hds-fhir/issues](https://github.com/imec-int/hds-fhir/issues)__  
   
 
 ---
