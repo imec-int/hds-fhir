@@ -10,7 +10,7 @@ Characteristics: #can-be-target
   * practiceType 0..1 ST20 "Practice Type"
   * contactEmail 0..1 ST20 "contact email"
   * caregiverIdentifier 0..1 Class "Identifier(s) of the provider"
-    * identifier:NIHDI 0..1 ST20 "NIHDI identifier"
+    * NIHDI 0..1 ST20 "NIHDI identifier"
   * postalCode 0..1 ST20 "Postal code"
   * street 0..1 ST20 "Street name"
   * houseNr 0..1 ST20 "House number"
