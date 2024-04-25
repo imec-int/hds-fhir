@@ -1,4 +1,4 @@
-Logical: HDS-Sample-Model
+Logical: HDS_Sample_Model
 Title: "HDS-Sample-Model"
 Description: "HDS Sample Model"
 Characteristics: #can-be-target
