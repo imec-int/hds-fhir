@@ -1,4 +1,4 @@
-Logical: HDS_Sample_Model
+Logical: HDS-Sample-Model
 Title: "HDS-Sample-Model"
 Description: "HDS Sample Model"
 Characteristics: #can-be-target
@@ -10,12 +10,12 @@ Characteristics: #can-be-target
   * practiceType 0..1 ST20 "Practice Type"
   * contactEmail 0..1 ST20 "contact email"
   * caregiverIdentifier 0..1 Class "Identifier(s) of the provider"
-    * NIHDI 0..1 ST20 "NIHDI identifier"
+    * nihdii 0..1 ST20 "nihdii number"
   * postalCode 0..1 ST20 "Postal code"
   * street 0..1 ST20 "Street name"
   * houseNr 0..1 ST20 "House number"
   * postbox 0..1 ST20 "Post box"
-  * MeasureReport 0..* Reference(MeasureReport)
+  //* MeasureReport 0..* Reference(MeasureReport) "MeasureReport"
 
 
 
