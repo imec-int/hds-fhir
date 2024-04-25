@@ -15,7 +15,7 @@ Characteristics: #can-be-target
   * street 0..1 ST20 "Street name"
   * houseNr 0..1 ST20 "House number"
   * postbox 0..1 ST20 "Post box"
-  //* MeasureReport 0..* Reference(MeasureReport) "MeasureReport"
+  * MeasureReport 0..* Reference("MeasureReport") "MeasureReport"
 
 
 
