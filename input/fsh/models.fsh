@@ -15,13 +15,8 @@ Characteristics: #can-be-target
   * street 0..1 ST20 "Street name"
   * houseNr 0..1 ST20 "House number"
   * postbox 0..1 ST20 "Post box"
-  * measureReportid 0..* Reference("MeasureReport") "MeasureReport"
+  * MeasureReport 0..* MeasureReport "MeasureReport"
 
-
-MappingRule: MeasureReportMapping
-* source = "measureReportid"
-* target = "MeasureReport.identifier"
-* description = "Mapping measureReportid reference to FHIR MeasureReport.identifier"
 
 Profile: Class
 Parent: BackboneElement
