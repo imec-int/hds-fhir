@@ -15,7 +15,6 @@ Issues and change requests are managed here:
 Issues:  __[https://github.com/imec-int/hds-fhir/issues](https://github.com/imec-int/hds-fhir/issues)__  
 
 
-*Current repo is generated from: https://github.com/hl7-be/empty-ig-custom
-First implementation is at: https://github.com/costateixeira/vl_hds, thanks to @costateixeira.*
+*Current repo is generated from: https://github.com/hl7-be/empty-ig-custom, first implementation is at: https://github.com/costateixeira/vl_hds, thanks to @costateixeira.*
 
 ---
