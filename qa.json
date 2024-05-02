@@ -1,0 +1,20 @@
+{
+  "url" : "https://imec-int.github.io/hds-fhir/",
+  "name" : "SampleHDS",
+  "title" : "Sample Implementation Guide for HDS",
+  "description" : "Example",
+  "ig-date" : "2025-01-01",
+  "status" : "active",
+  "package-id" : "my-ig",
+  "ig-ver" : "1.0.0",
+  "date" : "Thu, 02 May, 2024 07:43:26 +0000",
+  "dateISO8601" : "2024-05-02T07:43:26+00:00",
+  "errs" : 7,
+  "warnings" : 43,
+  "hints" : 0,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1158222160
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id" : "my-ig",
+    "type" : "ImplementationGuide",
+    "url" : "https://imec-int.github.io/hds-fhir/",
+    "version" : "1.0.0",
+    "name" : "SampleHDS"
+  },
+  {
+    "id" : "Class",
+    "type" : "StructureDefinition",
+    "url" : "https://imec-int.github.io/hds-fhir//StructureDefinition/Class",
+    "version" : "1.0.0",
+    "name" : "Class"
+  },
+  {
+    "id" : "HDS-Sample-Model",
+    "type" : "StructureDefinition",
+    "url" : "https://imec-int.github.io/hds-fhir//StructureDefinition/HDS-Sample-Model",
+    "version" : "1.0.0",
+    "name" : "HDS-Sample-Model"
+  },
+  {
+    "id" : "ST20",
+    "type" : "StructureDefinition",
+    "url" : "https://imec-int.github.io/hds-fhir//StructureDefinition/ST20",
+    "version" : "1.0.0",
+    "name" : "ST20"
+  },
+  {
+    "id" : "TS",
+    "type" : "StructureDefinition",
+    "url" : "https://imec-int.github.io/hds-fhir//StructureDefinition/TS",
+    "version" : "1.0.0",
+    "name" : "TS"
+  }
+]

@@ -1,0 +1,601 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 82, errors = 7, warn = 43, info = 0-->
+<head>
+  <title>SampleHDS : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for SampleHDS</h1>
+ <p>Generated Thu May 02 07:43:41 UTC 2024, FHIR version 4.0.1 for my-ig#1.0.0 (canonical = <a href="https://imec-int.github.io/hds-fhir/">https://imec-int.github.io/hds-fhir/</a> (<a href="https://imec-int.github.io/hds-fhir//history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.6.6</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = my-ig, Canonical = https://imec-int.github.io/hds-fhir/</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><ul><li>History Page 'history.html' is wrong (ig.json#paths/history) - must be 'https://imec-int.github.io/hds-fhir/history.html' <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>Error fetching package-list from https://imec-int.github.io/hds-fhir/: Not Found <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">5 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> my-ig</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://imec-int.github.io/hds-fhir/</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.5.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/5.5.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: hl7.fhir.be.my.template#0.0.1 -&gt; hl7.be.fhir.template#current -&gt; fhir.base.template#current. Tools: 0.1.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses)
+  </li>
+  <li>
+hl7.fhir.uv.extensions.r4#5.1.0:     <a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-structuredefinition-type-characteristics.html">SDTypeCharacteristics</a>
+ (1 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools#0.1.0:     <a href="http://hl7.org/fhir/tools/0.1.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (4 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://imec-int.github.io/hds-fhir/ (Problem #1 with package-list.json at https://imec-int.github.io/hds-fhir/: Not Found)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 7, warn = 43, info = 0, broken links = 82</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>82</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-my-ig"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-my-ig</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-Class"><b>/github/workspace/fsh-generated/resources/StructureDefinition-Class</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-HDS-Sample-Model"><b>/github/workspace/fsh-generated/resources/StructureDefinition-HDS-Sample-Model</b></a></td><td><b>1</b></td><td><b>35</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ST20"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ST20</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-TS"><b>/github/workspace/fsh-generated/resources/StructureDefinition-TS</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.url</b></td><td><b>warning</b></td><td title=""><b>The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class-definitions.html#l266">output&#8203;/StructureDefinition-Class-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class-definitions.html#l934">output&#8203;/StructureDefinition-Class-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 330, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class-examples.html#l254">output&#8203;/StructureDefinition-Class-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class-examples.html#l378">output&#8203;/StructureDefinition-Class-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 277, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class-mappings.html#l266">output&#8203;/StructureDefinition-Class-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class-mappings.html#l432">output&#8203;/StructureDefinition-Class-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 283, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class-testing.html#l266">output&#8203;/StructureDefinition-Class-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class-testing.html#l400">output&#8203;/StructureDefinition-Class-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 284, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class.html#l266">output&#8203;/StructureDefinition-Class&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class.html#l1423">output&#8203;/StructureDefinition-Class&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 693, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class.profile.history.html#l254">output&#8203;/StructureDefinition-Class&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 153, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class.profile.history.html#l373">output&#8203;/StructureDefinition-Class&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 266, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class.profile.json.html#l266">output&#8203;/StructureDefinition-Class&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 156, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class.profile.json.html#l888">output&#8203;/StructureDefinition-Class&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 540, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class.profile.ttl.html#l266">output&#8203;/StructureDefinition-Class&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 156, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class.profile.ttl.html#l1306">output&#8203;/StructureDefinition-Class&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 476, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class.profile.xml.html#l266">output&#8203;/StructureDefinition-Class&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 156, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-Class.profile.xml.html#l1302">output&#8203;/StructureDefinition-Class&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 504, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model-definitions.html#l266">output&#8203;/StructureDefinition-HDS-Sample-Model-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model-definitions.html#l2934">output&#8203;/StructureDefinition-HDS-Sample-Model-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 466, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model-examples.html#l254">output&#8203;/StructureDefinition-HDS-Sample-Model-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model-examples.html#l378">output&#8203;/StructureDefinition-HDS-Sample-Model-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 277, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model-mappings.html#l266">output&#8203;/StructureDefinition-HDS-Sample-Model-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model-mappings.html#l392">output&#8203;/StructureDefinition-HDS-Sample-Model-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 276, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model-testing.html#l266">output&#8203;/StructureDefinition-HDS-Sample-Model-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model-testing.html#l400">output&#8203;/StructureDefinition-HDS-Sample-Model-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 284, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model.html#l266">output&#8203;/StructureDefinition-HDS-Sample-Model&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model.html#l3606">output&#8203;/StructureDefinition-HDS-Sample-Model&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 1268, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model.profile.history.html#l254">output&#8203;/StructureDefinition-HDS-Sample-Model&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 153, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model.profile.history.html#l373">output&#8203;/StructureDefinition-HDS-Sample-Model&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 266, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model.profile.json.html#l266">output&#8203;/StructureDefinition-HDS-Sample-Model&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 156, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model.profile.json.html#l2100">output&#8203;/StructureDefinition-HDS-Sample-Model&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 1162, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model.profile.ttl.html#l266">output&#8203;/StructureDefinition-HDS-Sample-Model&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 156, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model.profile.ttl.html#l3522">output&#8203;/StructureDefinition-HDS-Sample-Model&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 914, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model.profile.xml.html#l266">output&#8203;/StructureDefinition-HDS-Sample-Model&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 156, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-HDS-Sample-Model.profile.xml.html#l3441">output&#8203;/StructureDefinition-HDS-Sample-Model&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 1029, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20-definitions.html#l266">output&#8203;/StructureDefinition-ST20-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20-definitions.html#l738">output&#8203;/StructureDefinition-ST20-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 318, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20-examples.html#l254">output&#8203;/StructureDefinition-ST20-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20-examples.html#l378">output&#8203;/StructureDefinition-ST20-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 277, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20-mappings.html#l266">output&#8203;/StructureDefinition-ST20-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20-mappings.html#l425">output&#8203;/StructureDefinition-ST20-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 282, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20-testing.html#l266">output&#8203;/StructureDefinition-ST20-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20-testing.html#l400">output&#8203;/StructureDefinition-ST20-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 284, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20.html#l266">output&#8203;/StructureDefinition-ST20&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20.html#l1285">output&#8203;/StructureDefinition-ST20&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 659, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20.profile.history.html#l254">output&#8203;/StructureDefinition-ST20&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 153, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20.profile.history.html#l373">output&#8203;/StructureDefinition-ST20&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 266, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20.profile.json.html#l266">output&#8203;/StructureDefinition-ST20&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 156, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20.profile.json.html#l786">output&#8203;/StructureDefinition-ST20&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 488, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20.profile.ttl.html#l266">output&#8203;/StructureDefinition-ST20&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 156, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20.profile.ttl.html#l1102">output&#8203;/StructureDefinition-ST20&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 438, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20.profile.xml.html#l266">output&#8203;/StructureDefinition-ST20&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 156, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-ST20.profile.xml.html#l1095">output&#8203;/StructureDefinition-ST20&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 451, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS-definitions.html#l266">output&#8203;/StructureDefinition-TS-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS-definitions.html#l738">output&#8203;/StructureDefinition-TS-definitions&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 318, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS-examples.html#l254">output&#8203;/StructureDefinition-TS-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS-examples.html#l378">output&#8203;/StructureDefinition-TS-examples&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 277, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS-mappings.html#l266">output&#8203;/StructureDefinition-TS-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS-mappings.html#l425">output&#8203;/StructureDefinition-TS-mappings&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 282, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS-testing.html#l266">output&#8203;/StructureDefinition-TS-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS-testing.html#l400">output&#8203;/StructureDefinition-TS-testing&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 284, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS.html#l266">output&#8203;/StructureDefinition-TS&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 152, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS.html#l1285">output&#8203;/StructureDefinition-TS&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 659, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS.profile.history.html#l254">output&#8203;/StructureDefinition-TS&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 153, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS.profile.history.html#l373">output&#8203;/StructureDefinition-TS&#8203;.profile&#8203;.history&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 266, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS.profile.json.html#l266">output&#8203;/StructureDefinition-TS&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 156, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS.profile.json.html#l786">output&#8203;/StructureDefinition-TS&#8203;.profile&#8203;.json&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 488, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS.profile.ttl.html#l266">output&#8203;/StructureDefinition-TS&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 156, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS.profile.ttl.html#l1102">output&#8203;/StructureDefinition-TS&#8203;.profile&#8203;.ttl&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 438, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS.profile.xml.html#l266">output&#8203;/StructureDefinition-TS&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 156, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-TS.profile.xml.html#l1095">output&#8203;/StructureDefinition-TS&#8203;.profile&#8203;.xml&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 453, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#l264">output&#8203;/artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 155, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#l448">output&#8203;/artifacts&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 254, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="changes.html#l264">output&#8203;/changes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 155, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="changes.html#l347">output&#8203;/changes&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 197, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="downloads.html#l264">output&#8203;/downloads&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 155, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="downloads.html#l389">output&#8203;/downloads&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 233, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l264">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 155, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="index.html#l442">output&#8203;/index&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 262, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#l260">output&#8203;/toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/a at Line 155, column 423</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Directory of published versions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="toc.html#l393">output&#8203;/toc&#8203;.html&#8203;#&#8203;/html&#8203;/body&#8203;/div&#8203;/div&#8203;/div&#8203;/p&#8203;/span&#8203;/a at Line 186, column 19</a></b></td><td><b>error</b></td><td><b>The link 'https://imec-int.github.io/hds-fhir//history.html' for &quot;Version History&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td title=""><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td title=""><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ImplementationGuide-my-ig"> </a>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-my-ig.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>ImplementationGuide/my-ig: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide&#8203;.where(url = 'https:&#8203;/&#8203;/imec-int&#8203;.github&#8203;.io&#8203;/hds-fhir&#8203;/')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig.json - the canonical URL (https://imec-int.github.io/hds-fhir/ImplementationGuide/my-ig) does not match the URL (https://imec-int.github.io/hds-fhir/)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: my-ig/https://imec-int.github.io/hds-fhir/</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>fsh-generated&#8203;/resources&#8203;/ImplementationGuide-my-ig</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://imec-int.github.io/hds-fhir//ImplementationGuide/my-ig vs https://imec-int.github.io/hds-fhir/</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-Class"> </a>
+<h2><a href="StructureDefinition-Class.html">fsh-generated/resources/StructureDefinition-Class.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/imec-int&#8203;.github&#8203;.io&#8203;/hds-fhir&#8203;/&#8203;/StructureDefinition&#8203;/Class')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-Class.json - the canonical URL (https://imec-int.github.io/hds-fhir/StructureDefinition/Class) does not match the URL (https://imec-int.github.io/hds-fhir//StructureDefinition/Class)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/imec-int&#8203;.github&#8203;.io&#8203;/hds-fhir&#8203;/&#8203;/StructureDefinition&#8203;/Class')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this data type profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-HDS-Sample-Model"> </a>
+<h2><a href="StructureDefinition-HDS-Sample-Model.html">fsh-generated/resources/StructureDefinition-HDS-Sample-Model.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/imec-int&#8203;.github&#8203;.io&#8203;/hds-fhir&#8203;/&#8203;/StructureDefinition&#8203;/HDS-Sample-Model')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-HDS-Sample-Model.json - the canonical URL (https://imec-int.github.io/hds-fhir/StructureDefinition/HDS-Sample-Model) does not match the URL (https://imec-int.github.io/hds-fhir//StructureDefinition/HDS-Sample-Model)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0] (l1&#8203;/c28785)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[1] (l1&#8203;/c29124)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[2] (l1&#8203;/c29710)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[3] (l1&#8203;/c30335)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4] (l1&#8203;/c32104)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[5] (l1&#8203;/c34790)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[6] (l1&#8203;/c35138)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[7] (l1&#8203;/c35548)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8] (l1&#8203;/c35906)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9] (l1&#8203;/c36264)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[10] (l1&#8203;/c36942)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[11] (l1&#8203;/c37607)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12] (l1&#8203;/c39416)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13] (l1&#8203;/c42142)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14] (l1&#8203;/c42542)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15] (l1&#8203;/c42890)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[16] (l1&#8203;/c43226)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17] (l1&#8203;/c43567)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18] (l1&#8203;/c43900)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19] (l1&#8203;/c44191)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[0] (l1&#8203;/c44331)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1] (l1&#8203;/c44600)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2] (l1&#8203;/c44862)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3] (l1&#8203;/c45133)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4] (l1&#8203;/c45454)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5] (l1&#8203;/c45733)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6] (l1&#8203;/c46012)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7] (l1&#8203;/c46346)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[8] (l1&#8203;/c46653)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9] (l1&#8203;/c46924)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10] (l1&#8203;/c47187)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11] (l1&#8203;/c47454)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[12] (l1&#8203;/c47713)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13] (l1&#8203;/c47924)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition (l1/c47927)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ST20"> </a>
+<h2><a href="StructureDefinition-ST20.html">fsh-generated/resources/StructureDefinition-ST20.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/imec-int&#8203;.github&#8203;.io&#8203;/hds-fhir&#8203;/&#8203;/StructureDefinition&#8203;/ST20')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-ST20.json - the canonical URL (https://imec-int.github.io/hds-fhir/StructureDefinition/ST20) does not match the URL (https://imec-int.github.io/hds-fhir//StructureDefinition/ST20)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/imec-int&#8203;.github&#8203;.io&#8203;/hds-fhir&#8203;/&#8203;/StructureDefinition&#8203;/ST20')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this data type profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-TS"> </a>
+<h2><a href="StructureDefinition-TS.html">fsh-generated/resources/StructureDefinition-TS.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/imec-int&#8203;.github&#8203;.io&#8203;/hds-fhir&#8203;/&#8203;/StructureDefinition&#8203;/TS')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-TS.json - the canonical URL (https://imec-int.github.io/hds-fhir/StructureDefinition/TS) does not match the URL (https://imec-int.github.io/hds-fhir//StructureDefinition/TS)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/imec-int&#8203;.github&#8203;.io&#8203;/hds-fhir&#8203;/&#8203;/StructureDefinition&#8203;/TS')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this data type profile</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>If this was a real IG, there should be examples for these profiles too.  But it's not, and I'm lazy...</b></p><ul>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/myObservation: The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+ <li>WARNING: http://somewhere.org/fhir/uv/myig/StructureDefinition/mypractitioner: The Implementation Guide contains no examples for this profile <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>This is inherited from the base resource</b></p><ul>
+ <li>WARNING: StructureDefinition/myObservation: StructureDefinition.snapshot.element[15].mapping[3].map: value should not start or finish with whitespace <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<p><b>We're expecting these to not match the slice - we're showing how you can use slicing to define the one repetition you want even when many repetitions might be present</b></p><ul>
+ <li>INFORMATION: Patient/example: Patient.name[0]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+ <li>INFORMATION: Patient/example: Patient.name[1]: This element does not match any known slice defined in the profile http://somewhere.org/fhir/uv/myig/StructureDefinition/mypatient <span style="color: maroon">(0 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="RESOURCE_CANONICAL_MISMATCH"> </a>
+<h2>RESOURCE_CANONICAL_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-my-ig.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ImplementationGuide-my-ig.json - the canonical URL (https://imec-int.github.io/hds-fhir/ImplementationGuide/my-ig) does not match the URL (https://imec-int.github.io/hds-fhir/)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-Class.html">fsh-generated/resources/StructureDefinition-Class.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-Class.json - the canonical URL (https://imec-int.github.io/hds-fhir/StructureDefinition/Class) does not match the URL (https://imec-int.github.io/hds-fhir//StructureDefinition/Class)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-HDS-Sample-Model.html">fsh-generated/resources/StructureDefinition-HDS-Sample-Model.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-HDS-Sample-Model.json - the canonical URL (https://imec-int.github.io/hds-fhir/StructureDefinition/HDS-Sample-Model) does not match the URL (https://imec-int.github.io/hds-fhir//StructureDefinition/HDS-Sample-Model)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-ST20.html">fsh-generated/resources/StructureDefinition-ST20.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-ST20.json - the canonical URL (https://imec-int.github.io/hds-fhir/StructureDefinition/ST20) does not match the URL (https://imec-int.github.io/hds-fhir//StructureDefinition/ST20)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-TS.html">fsh-generated/resources/StructureDefinition-TS.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-TS.json - the canonical URL (https://imec-int.github.io/hds-fhir/StructureDefinition/TS) does not match the URL (https://imec-int.github.io/hds-fhir//StructureDefinition/TS)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_ID_MISMATCH"> </a>
+<h2>RESOURCE_ID_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="index.html">fsh-generated/resources/ImplementationGuide-my-ig.json</a></td><td><b>Resource id/url mismatch: my-ig/https://imec-int.github.io/hds-fhir/</b></td>
+   </tr>
+</table>
+</body>
+</html>
